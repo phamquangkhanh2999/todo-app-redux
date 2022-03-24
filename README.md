@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+npx create-react-app .
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install --save-dev @fortawesome/fontawesome-free
+npm install react-redux
+npm install redux
+npm i redux-thunk
+npm i redux-devtools-extension
+npm i uuid
+
+- import { combineReducers } from "redux"; moi truong redux khac nhau thanh ham duy nhat
+- applyMiddleware là một cơ chế mở rộng mạnh hơn chính phần mềm trung gian
+- Redux Thunk là một Middleware cho phép bạn viết các Action trả về một function thay vì một plain javascript object bằng cách trì hoãn việc đưa action đến reducer.
+- Redux Thunk được sử dụng để xử lý các logic bất đồng bộ phức tạp cần truy cập đến Store hoặc đơn giản là việc lấy dữ liệu như Ajax request.
+- <Provider>phần làm cho Redux store có sẵn cho bất kỳ thành phần lồng nhau nào cần truy cập cửa hàng Redux.
+- store( Redux Store ) Redux duy nhất storetrong ứng dụng của bạn.
+- children (ReactElement) root cấu trúc phần cấp component .
+- context Bạn có thể cung cấp một trường hợp ngữ cảnh
+
+- connect chấp nhận bốn tham số khác nhau, tất cả đều là tùy chọn. Theo quy ước, chúng được gọi là:
+
+  - mapStateToProps?: Function
+  - mapDispatchToProps?: Function | Object
+  - mergeProps?: Function
+  - options?: Object
+
+- Phương JSON.parse()thức phân tích cú pháp một chuỗi JSON, xây dựng giá trị JavaScript ->get
+- Phương JSON.stringify()thức chuyển đổi một đối tượng hoặc giá trị JavaScript thành một chuỗi JSON, -> set
