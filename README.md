@@ -97,3 +97,6 @@ npm i uuid
 
 - Phương JSON.parse()thức phân tích cú pháp một chuỗi JSON, xây dựng giá trị JavaScript ->get
 - Phương JSON.stringify()thức chuyển đổi một đối tượng hoặc giá trị JavaScript thành một chuỗi JSON, -> set
+
+- value thuộc tính trong phần tử biểu mẫu sẽ ghi đè các giá trị trong DOM
+- defaultValue thuộc tính, thuộc tính này chỉ định giá trị ban đầu nhưng không kiểm soát được các bản cập nhật tiếp theo.

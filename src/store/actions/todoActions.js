@@ -22,10 +22,9 @@ export const removeIdTodo = (id) => (dispatch, getState) => {
   );
 };
 
-export const removeAllTodo = (data) => (dispatch) => {
+export const removeAllTodo = () => (dispatch) => {
   dispatch({
     type: actionTypes.REMOVE_ALL_TODO_LIST,
-    payload: data,
   });
   localStorage.removeItem("TodoData");
 };
@@ -41,41 +40,14 @@ export const todoCompleted = (id) => (dispatch, getState) => {
   );
 };
 
-export const getAllTodoList = () => (dispatch) => {
-  try {
-    let getAll = JSON.parse(localStorage.getItem("TodoData"));
-
-    dispatch({
-      type: actionTypes.GET_ALL_TODO_LIST,
-      payload: getAll,
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-export const getActiveTodoList = () => (dispatch) => {
-  try {
-    let getAll = JSON.parse(localStorage.getItem("TodoData"));
-    let active = getAll.filter((item) => item.completed === false);
-    dispatch({
-      type: actionTypes.TODO_ACTIVE,
-      payload: active,
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-export const getCompletedTodoList = () => (dispatch) => {
-  try {
-    let getAll = JSON.parse(localStorage.getItem("TodoData"));
-    let active = getAll.filter((item) => item.completed === true);
-    dispatch({
-      type: actionTypes.TODO_COMPLETED_ACTIVE,
-      payload: active,
-    });
-  } catch (error) {
-    console.log(error);
-  }
+export const editTodoList = (data) => (dispatch, getState) => {
+  console.log(data);
+  dispatch({
+    type: actionTypes.TODO_EDIT,
+    payload: data,
+  });
+  localStorage.setItem(
+    "TodoData",
+    JSON.stringify(getState().todoReducer.todoLists)
+  );
 };
