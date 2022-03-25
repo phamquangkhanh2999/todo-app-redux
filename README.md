@@ -69,15 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-npx create-react-app .
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-npm install --save-dev @fortawesome/fontawesome-free
-npm install react-redux
-npm install redux
-npm i redux-thunk
-npm i redux-devtools-extension
-npm i uuid
+- npx create-react-app .
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+- npm install --save-dev @fortawesome/fontawesome-free
+- npm install react-redux
+- npm install redux
+- npm i redux-thunk
+- npm i redux-devtools-extension
+- npm i uuid
 
 - import { combineReducers } from "redux"; moi truong redux khac nhau thanh ham duy nhat
 - applyMiddleware là một cơ chế mở rộng mạnh hơn chính phần mềm trung gian
