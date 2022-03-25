@@ -100,3 +100,5 @@ npm i uuid
 
 - value thuộc tính trong phần tử biểu mẫu sẽ ghi đè các giá trị trong DOM
 - defaultValue thuộc tính, thuộc tính này chỉ định giá trị ban đầu nhưng không kiểm soát được các bản cập nhật tiếp theo.
+
+tiến trình dự án : https://trello.com/b/1jRENHzN/reatjs-todo-redux
